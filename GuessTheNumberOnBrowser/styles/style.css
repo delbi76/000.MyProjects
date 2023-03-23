@@ -1,0 +1,38 @@
+.btn 
+{
+  background-color: cornflowerblue;
+  border-radius: 12px;
+  color: white;
+  font-size: x-large;
+  height: 50px;
+  margin-top: 20px;
+  width: 150px;
+}
+
+.button-container 
+{
+  text-align: left;
+}
+
+.page-container 
+{
+    font-family: Century Gothic, Century Gothic, Century Gothic;
+    font-size: x-large;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.page-container h1 
+{
+  color: cornflowerblue;
+}
+
+.page-container input 
+{
+  font-size: x-large;
+}
+
+#again-container 
+{
+  display: none;
+}

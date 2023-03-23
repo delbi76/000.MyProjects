@@ -1,0 +1,131 @@
+Microsoft Windows [Version 10.0.22621.1413]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\nab>cd c:\\guesthe number
+The system cannot find the path specified.
+
+C:\Users\nab>pkg . --no-cache
+> pkg@5.8.1
+> Error! Input file does not exist
+  C:\Users\nab\package.json
+
+C:\Users\nab>pkg . --target node12-win-x64 --output myapp.exe --no-bytecode package.json --no-cache
+> pkg@5.8.1
+> Error! Not more than one entry file/directory is expected
+
+C:\Users\nab>pkg . --target node12-win-x64 --output myapp.exe --no-bytecode package.json
+> pkg@5.8.1
+> Error! Not more than one entry file/directory is expected
+
+C:\Users\nab>pkg . --no-cache
+> pkg@5.8.1
+> Error! Input file does not exist
+  C:\Users\nab\package.json
+
+C:\Users\nab>cd..
+
+C:\Users>cd..
+
+C:\>cd guessthenumber
+
+C:\GuessTheNumber>pkg . --no-cache
+> pkg@5.8.1
+> Error! Property 'bin' does not exist in
+  C:\GuessTheNumber\package.json
+
+C:\GuessTheNumber>pkg . --target node12-win-x64 --output myapp.exe --no-bytecode package.json
+> pkg@5.8.1
+> Error! Not more than one entry file/directory is expected
+
+C:\GuessTheNumber>pkg . --target node12-win-x64 --output myapp.exe --no-bytecode package.json --no-cache
+> pkg@5.8.1
+> Error! Not more than one entry file/directory is expected
+
+C:\GuessTheNumber>pkg . --target node12-win-x64 --output myapp.exe --no-bytecode
+> pkg@5.8.1
+> Error! Property 'bin' does not exist in
+  C:\GuessTheNumber\package.json
+
+C:\GuessTheNumber>pkg . --no-cache --target node12-win-x64 --output myapp.exe --no-bytecode
+> pkg@5.8.1
+> Error! Property 'bin' does not exist in
+  C:\GuessTheNumber\package.json
+
+C:\GuessTheNumber>pkg .
+> pkg@5.8.1
+> Targets not specified. Assuming:
+  node18-linux-x64, node18-macos-x64, node18-win-x64
+> Fetching base Node.js binaries to PKG_CACHE_PATH
+  fetched-v18.5.0-linux-x64           [====================] 100%
+
+  fetched-v18.5.0-win-x64             [====================] 100%
+
+  fetched-v18.5.0-macos-x64           [====================] 100%
+
+> Warning Cannot find module 'readline/package.json' from 'C:\GuessTheNumber'  in C:\GuessTheNumber\index.js
+
+C:\GuessTheNumber>pkg .
+> pkg@5.8.1
+> Targets not specified. Assuming:
+  node18-linux-x64, node18-macos-x64, node18-win-x64
+> Warning Cannot find module 'readline/package.json' from 'C:\GuessTheNumber'  in C:\GuessTheNumber\index.js
+
+C:\GuessTheNumber>pkg .
+> pkg@5.8.1
+> Targets not specified. Assuming:
+  node18-linux-x64, node18-macos-x64, node18-win-x64
+> Warning Cannot find module 'readline/package.json' from 'C:\GuessTheNumber'  in C:\GuessTheNumber\index.js
+
+C:\GuessTheNumber>pkg . --no-cache --target node12-win-x64 --output myapp.exe --no-bytecode
+> pkg@5.8.1
+> Fetching base Node.js binaries to PKG_CACHE_PATH
+  fetched-v12.22.11-win-x64           [====================] 100%
+
+> Warning Cannot find module 'readline/package.json' from 'C:\GuessTheNumber'  in C:\GuessTheNumber\index.js
+> Error! --no-bytecode and no source breaks final executable
+  C:\GuessTheNumber\index.js
+  Please run with "-d" and without "--no-bytecode" first, and make
+  sure that debug log does not contain "was included as bytecode".
+
+C:\GuessTheNumber>pkg . --no-cache --target node12-win-x64 --output myapp.exe --no-bytecode
+> pkg@5.8.1
+> Warning Cannot find module 'readline/package.json' from 'C:\GuessTheNumber'  in C:\GuessTheNumber\index.js
+> Error! --no-bytecode and no source breaks final executable
+  C:\GuessTheNumber\index.js
+  Please run with "-d" and without "--no-bytecode" first, and make
+  sure that debug log does not contain "was included as bytecode".
+
+C:\GuessTheNumber>pkg . --target node12-win-x64 --output myapp.exe --no-bytecode
+> pkg@5.8.1
+> Warning Cannot find module 'readline/package.json' from 'C:\GuessTheNumber'  in C:\GuessTheNumber\index.js
+> Error! --no-bytecode and no source breaks final executable
+  C:\GuessTheNumber\index.js
+  Please run with "-d" and without "--no-bytecode" first, and make
+  sure that debug log does not contain "was included as bytecode".
+
+C:\GuessTheNumber>pkg . --no-cache
+> pkg@5.8.1
+> Targets not specified. Assuming:
+  node18-linux-x64, node18-macos-x64, node18-win-x64
+> Warning Cannot find module 'readline/package.json' from 'C:\GuessTheNumber'  in C:\GuessTheNumber\index.js
+
+C:\GuessTheNumber>pkg . --no-cache
+> pkg@5.8.1
+> Error! SyntaxError: Unexpected token / in JSON at position 210
+    at JSON.parse (<anonymous>)
+    at exec (C:\Users\nab\AppData\Roaming\npm\node_modules\pkg\lib-es5\index.js:244:26)
+    at async main (C:\Users\nab\AppData\Roaming\npm\node_modules\pkg\lib-es5\bin.js:12:5)
+
+C:\GuessTheNumber>pkg . --no-cache
+> pkg@5.8.1
+> Error! SyntaxError: Unexpected number in JSON at position 210
+    at JSON.parse (<anonymous>)
+    at exec (C:\Users\nab\AppData\Roaming\npm\node_modules\pkg\lib-es5\index.js:244:26)
+    at async main (C:\Users\nab\AppData\Roaming\npm\node_modules\pkg\lib-es5\bin.js:12:5)
+
+C:\GuessTheNumber>pkg . --no-cache
+> pkg@5.8.1
+> Targets not specified. Assuming:
+  node18-linux-x64, node18-macos-x64, node18-win-x64
+
+C:\GuessTheNumber>
