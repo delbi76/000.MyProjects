@@ -7,9 +7,7 @@ guessInput.addEventListener("keypress", function(event)
 {
   if (event.key === "Enter") 
   {
-    event.preventDefault();
-
-    guessButton.addEventListener('click', processGuess);
+    document.getElementById("guessButton").click();
   }
 });
 
