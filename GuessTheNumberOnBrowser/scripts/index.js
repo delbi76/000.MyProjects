@@ -3,10 +3,13 @@ const guessButton = document.getElementById('guess-button');
 guessButton.addEventListener('click', processGuess);
 
 const guessInput = document.getElementById('guess-input');
-guessInput.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
+guessInput.addEventListener("keypress", function(event) 
+{
+  if (event.key === "Enter") 
+  {
     event.preventDefault();
-    document.getElementById("guess-button").click();
+
+    guessButton.addEventListener('click', processGuess);
   }
 });
 
