@@ -54,15 +54,15 @@ function processGuess()
 
     if (guess === randomNumber) 
 	{
-      feedbackText = `Ξ¤ΞΏ ${guess} ΞµΞ―Ξ½Ξ±ΞΉ ΟƒΟ‰ΟƒΟ„Ο� ... Ξ�Ξ­Ο�Ξ΄ΞΉΟƒΞµΟ‚!`;
+      feedbackText = `Το ${guess} είναι σωστό ... Κέρδισες!`;
       displayPlayAgain(true);
     } 
 	else if (guess > randomNumber) 
 	{
-      feedbackText = `Ξ¤ΞΏ ${guess} ΞµΞ―Ξ½Ξ±ΞΉ Ο€ΞΏΞ»Ο� ΞΌΞµΞ³Ξ¬Ξ»ΞΏ`;
+      feedbackText = `Το ${guess} είναι πολύ μεγάλο`;
     } 
 	else
-      feedbackText = `Ξ¤ΞΏ ${guess} ΞµΞ―Ξ½Ξ±ΞΉ Ο€ΞΏΞ»Ο� ΞΌΞΉΞΊΟ�Ο�`;
+      feedbackText = `Το ${guess} είναι πολύ μικρό`;
   }
   if (feedbackContainer)
     feedbackContainer.innerHTML += '<br>' + feedbackText;
