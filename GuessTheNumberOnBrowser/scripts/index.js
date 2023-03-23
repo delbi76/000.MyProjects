@@ -3,15 +3,12 @@ const guessButton = document.getElementById('guess-button');
 guessButton.addEventListener('click', processGuess);
 
 const guessInput = document.getElementById('guess-input');
+
 guessInput.addEventListener("keypress", function(event) 
 {
-
-javascript:alert('Hello World!');
-
-
   if (event.key === "Enter") 
   {
-    document.getElementById("guessButton").click();
+    javascript:alert('Hello World!');
   }
 });
 
@@ -58,8 +55,6 @@ function generateRandomNumber(max)
 
 function processGuess() 
 {
-javascript:alert('Hello World!');
-
   let feedbackText;
   if (guessInput)
   {
