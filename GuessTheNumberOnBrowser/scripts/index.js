@@ -58,6 +58,8 @@ function generateRandomNumber(max)
 
 function processGuess() 
 {
+javascript:alert('Hello World!');
+
   let feedbackText;
   if (guessInput)
   {
