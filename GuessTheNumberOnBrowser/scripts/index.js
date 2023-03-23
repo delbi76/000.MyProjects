@@ -3,6 +3,12 @@ const guessButton = document.getElementById('guess-button');
 guessButton.addEventListener('click', processGuess);
 
 const guessInput = document.getElementById('guess-input');
+guessInput.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("guess-button").click();
+  }
+});
 
 const feedbackContainer = document.getElementById('feedback');
 const playAgainContainer = document.getElementById('again-container');
@@ -27,16 +33,6 @@ function startGame()
  
   randomNumber = generateRandomNumber(100);
 }
-
-function(event) 
-{
-  if (event.key === "Enter") 
-{
-    event.preventDefault();
-
-    guessButton.addEventListener('click', processGuess);
-  }
-});
 
 function displayPlayAgain(display) 
 {
