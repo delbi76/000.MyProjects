@@ -66,5 +66,6 @@ function processGuess()
   }
   if (feedbackContainer)
     feedbackContainer.innerHTML += '<br>' + feedbackText;
+
 guessInput.value = '';
 }
