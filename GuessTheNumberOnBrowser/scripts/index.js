@@ -28,6 +28,16 @@ function startGame()
   randomNumber = generateRandomNumber(100);
 }
 
+function(event) 
+{
+  if (event.key === "Enter") 
+{
+    event.preventDefault();
+
+    guessButton.addEventListener('click', processGuess);
+  }
+});
+
 function displayPlayAgain(display) 
 {
   if (playAgainContainer) 
