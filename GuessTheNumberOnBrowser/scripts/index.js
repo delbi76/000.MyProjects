@@ -60,7 +60,7 @@ function processGuess()
 	else if (guess > randomNumber) 
 	{
       feedbackText = `Το ${guess} είναι πολύ μεγάλο. Δοκίμασε πάλι!`;
-document.getElementById('feedback') = null;
+document.getElementById('guess-input') = '';
     } 
 	else
       feedbackText = `Το ${guess} είναι πολύ μικρό. Δοκίμασε πάλι!`;
