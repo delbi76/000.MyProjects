@@ -5,6 +5,10 @@ guessButton.addEventListener('click', processGuess);
 const guessInput = document.getElementById('guess-input');
 guessInput.addEventListener("keypress", function(event) 
 {
+
+javascript:alert('Hello World!');
+
+
   if (event.key === "Enter") 
   {
     document.getElementById("guessButton").click();
