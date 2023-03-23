@@ -9,6 +9,7 @@ guessInput.addEventListener("keypress", function(event)
   if (event.key === "Enter") 
   {
     javascript:alert('Hello World!');
+    guessButton.click;
   }
 });
 
