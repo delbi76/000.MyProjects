@@ -91,7 +91,7 @@ function processGuess()
     {
       //feedbackContainer.innerHTML += '<br>' + feedbackText;
 
-      feedbackContainer.innerHTML = '<br>' + feedbackText + '<br>' + feedbackContainer.innerHTML;
+      feedbackContainer.innerHTML = '<br>' + feedbackText + feedbackContainer.innerHTML;
     }
   }
 
