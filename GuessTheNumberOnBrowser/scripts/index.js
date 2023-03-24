@@ -11,7 +11,6 @@ guessInput.addEventListener("keypress", function(event)
 
 const feedbackContainer = document.getElementById('feedback');
 const playAgainContainer = document.getElementById('again-container');
-
 const playButtonContainer = document.getElementById('button-container');
 
 const playAgainButton = document.getElementById('again-button');
@@ -28,7 +27,7 @@ function startGame()
   displayPlayAgain(false);
 
   if (feedbackContainer) 
-    feedbackContainer.innerHTML = '<br>';
+    feedbackContainer.innerHTML = ` ` + '<br>';
 
   if (guessInput) 
     guessInput.value = '';
@@ -47,14 +46,14 @@ function displayPlayAgain(display)
   }
 }
 
-function displayPlayButton(displayz) 
+function displayPlayButton(display) 
 {
   if (playButtonContainer) 
   {
-    if (displayz) 
-      playButtonContainer.style.displayz = 'block';
+    if (display) 
+      playButtonContainer.style.display = 'block';
     else 
-      playButtonContainer.style.displayz = 'none';
+      playButtonContainer.style.display = 'none';
   }
 }
 
@@ -75,8 +74,8 @@ function processGuess()
     {
       feedbackText = `Το ${guess} είναι σωστό... ${'<span style="font-weight:bold;">'} Κέρδισες!${'</span>'}`;
 
-      displayPlayAgain(true);
       displayPlayButton(false);
+      displayPlayAgain(true);
     } 
     else if (guess > randomNumber) 
         feedbackText = `Το ${guess} είναι πολύ ${'<l style="color:blue;">'} μεγάλο${'</l>'}. Δοκίμασε πάλι!`;
