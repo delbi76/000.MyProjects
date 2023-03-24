@@ -27,7 +27,7 @@ function startGame()
   displayPlayAgain(false);
 
   if (feedbackContainer) 
-    feedbackContainer.innerHTML =  `...` + '<p>' + `...`;
+    feedbackContainer.innerHTML = '';
 
   if (guessInput) 
     guessInput.value = '';
@@ -91,7 +91,7 @@ function processGuess()
     {
       //feedbackContainer.innerHTML += '<br>' + feedbackText;
 
-      feedbackContainer.innerHTML =  feedbackText + '<br>' + feedbackContainer.innerHTML;
+      feedbackContainer.innerHTML = '<br>' + feedbackText + '<br>' + feedbackContainer.innerHTML;
     }
   }
 
