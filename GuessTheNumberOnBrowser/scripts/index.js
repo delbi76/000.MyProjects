@@ -73,7 +73,11 @@ function processGuess()
     if(guessInput.value.length == 0)
       alert('Ε δώσε έναν αριθμό ντε...');
     else
-      feedbackContainer.innerHTML += '<br>' + feedbackText;
+    {
+      //feedbackContainer.innerHTML += '<br>' + feedbackText;
+
+      feedbackContainer.innerHTML =  feedbackText + '<br>' + feedbackContainer.innerHTML;
+    }
   }
 
   guessInput.value = ''; 
