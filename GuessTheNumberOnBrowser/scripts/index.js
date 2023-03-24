@@ -47,14 +47,14 @@ function displayPlayAgain(display)
   }
 }
 
-function displayPlayButton(display) 
+function displayPlayButton(displayz) 
 {
-  if (playButtonContainer.style.display) 
+  if (playButtonContainer.style.displayz) 
   {
-    if (display) 
-      playButtonContainer.style.display = 'block';
+    if (displayz) 
+      playButtonContainer.style.displayz = 'block';
     else 
-      playButtonContainer.style.display = 'none';
+      playButtonContainer.style.displayz = 'none';
   }
 }
 
