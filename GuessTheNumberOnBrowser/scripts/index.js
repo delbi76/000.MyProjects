@@ -49,7 +49,7 @@ function displayPlayAgain(display)
 
 function displayPlayButton(displayz) 
 {
-  if (playButtonContainer.style.displayz) 
+  if (playButtonContainer) 
   {
     if (displayz) 
       playButtonContainer.style.displayz = 'block';
