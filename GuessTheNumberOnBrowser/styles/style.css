@@ -16,7 +16,8 @@
 
 .page-container 
 {
-    font-family: Century Gothic, Century Gothic, Century Gothic;
+    background-color: rgb(217, 225, 237);
+    font-family: Century Gothic;
     font-size: x-large;
     margin: 0 auto;
     width: 90%;
