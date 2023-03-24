@@ -56,16 +56,18 @@ function processGuess()
   if (guessInput)
   {
     const guess = guessInput.valueAsNumber;
+    var vLow = 'μικρό';
+    var vHigh = 'μεγάλο';
 
     if (guess === randomNumber) 
     {
-      feedbackText = `Το ${guess} είναι σωστό ... Κέρδισες!`;
+      feedbackText = `Το ${guess} είναι σωστό... ${'<span style="font-weight:bold;">'} Κέρδισες!${'</span>'}`;
       displayPlayAgain(true);
     } 
     else if (guess > randomNumber) 
-        feedbackText = `Το ${guess} είναι πολύ μεγάλο. Δοκίμασε πάλι!`;
+        feedbackText = `Το ${guess} είναι πολύ ${'<l style="color:blue;">'} μεγάλο ${'</l>'}. Δοκίμασε πάλι!`;
     else
-      feedbackText = `Το ${guess} είναι πολύ μικρό. Δοκίμασε πάλι!`; 
+      feedbackText = `Το ${guess} είναι πολύ ${'<l style="color:red;">'} μικρό${'</l>'}. Δοκίμασε πάλι!`;
   }
 
   if (feedbackContainer)
