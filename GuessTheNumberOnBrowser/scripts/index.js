@@ -58,7 +58,7 @@ function processGuess()
     const guess = guessInput.valueAsNumber;
 
     if (guess === randomNumber) 
-	  {
+    {
       feedbackText = `Το ${guess} είναι σωστό ... Κέρδισες!`;
       displayPlayAgain(true);
     } 
@@ -66,9 +66,16 @@ function processGuess()
         feedbackText = `Το ${guess} είναι πολύ μεγάλο. Δοκίμασε πάλι!`;
     else
         feedbackText = `Το ${guess} είναι πολύ μικρό. Δοκίμασε πάλι!`;
+       
   }
-  if (feedbackContainer)
-    feedbackContainer.innerHTML += '<br>' + feedbackText;
 
-guessInput.value = '';
+  if (feedbackContainer)
+  {
+    if(guessInput.value.length == 0)
+      alert('Ε δώσε εναν αριθμό ντε...');
+    else
+      feedbackContainer.innerHTML += '<br>' + feedbackText;
+  }
+
+  guessInput.value = '';
 }
