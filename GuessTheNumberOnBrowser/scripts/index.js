@@ -1,4 +1,3 @@
-// Find the elements
 const guessButton = document.getElementById('guess-button');
 guessButton.addEventListener('click', processGuess);
 
@@ -16,11 +15,11 @@ const playAgainContainer = document.getElementById('again-container');
 const playAgainButton = document.getElementById('again-button');
 playAgainButton.addEventListener('click', startGame);
 
-// Start the game
+// Έναρξη Παιχνιδιού
 let randomNumber;
 startGame();
 
-// Supporting functions
+// functions
 function startGame()
 {
   displayPlayAgain(false);
