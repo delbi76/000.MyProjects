@@ -7,9 +7,7 @@ const guessInput = document.getElementById('guess-input');
 guessInput.addEventListener("keypress", function(event) 
 {
   if (event.key === "Enter") 
-  {
     processGuess();
-  }
 });
 
 const feedbackContainer = document.getElementById('feedback');
@@ -42,7 +40,7 @@ function displayPlayAgain(display)
   {
     if (display) 
       playAgainContainer.style.display = 'block';
-     else 
+    else 
       playAgainContainer.style.display = 'none';
   }
 }
@@ -61,16 +59,14 @@ function processGuess()
     const guess = guessInput.valueAsNumber;
 
     if (guess === randomNumber) 
-	{
+	  {
       feedbackText = `Το ${guess} είναι σωστό ... Κέρδισες!`;
       displayPlayAgain(true);
     } 
-	else if (guess > randomNumber) 
-	{
-      feedbackText = `Το ${guess} είναι πολύ μεγάλο. Δοκίμασε πάλι!`;
-    } 
-	else
-      feedbackText = `Το ${guess} είναι πολύ μικρό. Δοκίμασε πάλι!`;
+    else if (guess > randomNumber) 
+        feedbackText = `Το ${guess} είναι πολύ μεγάλο. Δοκίμασε πάλι!`;
+    else
+        feedbackText = `Το ${guess} είναι πολύ μικρό. Δοκίμασε πάλι!`;
   }
   if (feedbackContainer)
     feedbackContainer.innerHTML += '<br>' + feedbackText;
