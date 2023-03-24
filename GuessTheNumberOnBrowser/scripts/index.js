@@ -63,7 +63,7 @@ function processGuess()
       displayPlayAgain(true);
     } 
     else if (guess > randomNumber) 
-        feedbackText = `Το ${guess} είναι πολύ ${'<l style="color:blue;">'} μεγάλο ${'</l>'}. Δοκίμασε πάλι!`;
+        feedbackText = `Το ${guess} είναι πολύ ${'<l style="color:blue;">'} μεγάλο${'</l>'}. Δοκίμασε πάλι!`;
     else
       feedbackText = `Το ${guess} είναι πολύ ${'<l style="color:red;">'} μικρό${'</l>'}. Δοκίμασε πάλι!`;
   }
