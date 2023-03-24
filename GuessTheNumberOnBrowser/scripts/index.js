@@ -74,8 +74,9 @@ function processGuess()
     if (guess === randomNumber) 
     {
       feedbackText = `Το ${guess} είναι σωστό... ${'<span style="font-weight:bold;">'} Κέρδισες!${'</span>'}`;
-      displayPlayButton(false);
+
       displayPlayAgain(true);
+      displayPlayButton(false);
     } 
     else if (guess > randomNumber) 
         feedbackText = `Το ${guess} είναι πολύ ${'<l style="color:blue;">'} μεγάλο${'</l>'}. Δοκίμασε πάλι!`;
