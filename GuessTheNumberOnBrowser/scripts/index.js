@@ -65,8 +65,7 @@ function processGuess()
     else if (guess > randomNumber) 
         feedbackText = `Το ${guess} είναι πολύ μεγάλο. Δοκίμασε πάλι!`;
     else
-        feedbackText = `Το ${guess} είναι πολύ μικρό. Δοκίμασε πάλι!`;
-       
+        feedbackText = `Το ${guess} είναι πολύ μικρό. Δοκίμασε πάλι!`;  
   }
 
   if (feedbackContainer)
