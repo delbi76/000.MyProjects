@@ -56,8 +56,6 @@ function processGuess()
   if (guessInput)
   {
     const guess = guessInput.valueAsNumber;
-    var vLow = 'μικρό';
-    var vHigh = 'μεγάλο';
 
     if (guess === randomNumber) 
     {
