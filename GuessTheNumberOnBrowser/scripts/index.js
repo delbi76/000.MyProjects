@@ -25,7 +25,7 @@ function startGame()
   displayPlayAgain(false);
 
   if (feedbackContainer) 
-    feedbackContainer.innerHTML = '';
+    feedbackContainer.innerHTML = '<br>';
 
   if (guessInput) 
     guessInput.value = '';
