@@ -72,15 +72,15 @@ function processGuess()
 
     if (guess === randomNumber) 
     {
-      feedbackText = `Το ${guess} είναι σωστό... ${'<span style="font-weight:bold;">'} Κέρδισες!${'</span>'}`;
+      feedbackText = `Το ${'<l style="color:blue;">'} ${guess} {'</span>'} είναι σωστό... ${'<span style="font-weight:bold;">'} Κέρδισες!${'</span>'}`;
 
       displayPlayButton(false);
       displayPlayAgain(true);
     } 
     else if (guess > randomNumber) 
-        feedbackText = `Το ${guess} είναι πολύ ${'<l style="color:blue;">'} μεγάλο${'</l>'}. Δοκίμασε πάλι!`;
+        feedbackText = `Το ${'<l style="color:blue;">'} ${guess} {'</span>'} είναι ${'<l style="color:blue;">'} μεγάλο${'</l>'}. Δοκίμασε πάλι!`;
     else
-      feedbackText = `Το ${guess} είναι πολύ ${'<l style="color:red;">'} μικρό${'</l>'}. Δοκίμασε πάλι!`;
+      feedbackText = `Το ${'<l style="color:blue;">'} ${guess} {'</span>'} είναι ${'<l style="color:red;">'} μικρό${'</l>'}. Δοκίμασε πάλι!`;
   }
 
   if (feedbackContainer)
