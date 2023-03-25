@@ -80,7 +80,7 @@ function processGuess()
     else if (guess > randomNumber) 
         feedbackText = `Το ${'<span style="font-weight:bold;">'}${guess}${'</span>'} είναι ${'<l style="color:blue;">'} μεγάλο${'</l>'}. Δοκίμασε πάλι!`;
     else
-      feedbackText = `Το ${'<span style="font-weight:bold;">'}${guess}{'</span>'} είναι ${'<l style="color:red;">'} μικρό${'</l>'}. Δοκίμασε πάλι!`;
+      feedbackText = `Το ${'<span style="font-weight:bold;">'}${guess}${'</span>'} είναι ${'<l style="color:red;">'} μικρό${'</l>'}. Δοκίμασε πάλι!`;
   }
 
   if (feedbackContainer)
