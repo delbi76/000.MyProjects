@@ -90,8 +90,8 @@ function processGuess()
 
   if (feedbackContainer)
   {
-    if(guessInput.value.length == 0)
-      alert('Ε δώσε έναν αριθμό ντε...');
+    if((guessInput.value.length == 0) || (guessInput.valueAsNumber < 1) || (guessInput.valueAsNumber > 100))
+      alert('Ε δώσε έναν σωστό αριθμό ντε...');
     else
     {
       //feedbackContainer.innerHTML += '<br>' + feedbackText;
