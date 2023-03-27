@@ -5,8 +5,13 @@ const guessInput = document.getElementById('guess-input');
 
 guessInput.addEventListener("keypress", function(event) 
 {
-  if (event.key === "Enter") 
-    processGuess();
+  if (event.key === "Enter")
+  { 
+    if(playAgainContainer.style.display != 'block')
+      processGuess();
+    else
+      startGame();   
+  }
 });
 
 const feedbackContainer = document.getElementById('feedback');
