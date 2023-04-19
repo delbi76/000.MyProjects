@@ -15,6 +15,9 @@ $(function()
       minutes = minutes-(days*24*60)-(hours*60);
       seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
 
-      $("#time").text(days+" Ημέρες, "+hours+" Ώρες, "+minutes+" Λεπτά και "+seconds+" Δευτ/λεπτα!");
+      $("#vDays").text(days+" Ημέρες");
+      $("#vHours").text(hours+" Ώρες");
+      $("#vMins").text(minutes+" Λεπτά");
+      $("#vSec").text(seconds+" Δευτ/λεπτα");
   },1000);
 });
