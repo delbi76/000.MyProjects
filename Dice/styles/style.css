@@ -1,0 +1,87 @@
+.score li{
+    align-items: center;
+}
+.diceplace{
+    text-align: center;
+}
+.diceplace span{
+    display: block;
+}
+.diceplace div{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../photos/zaria.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: 0 10px;
+    outline: 3px solid #ccc;
+}
+.diceplace .zone{
+    background-position: center -300px;
+}
+.diceplace .ztwo{
+    background-position: center -240px;
+}
+.diceplace .zthree{
+    background-position: center -180px;
+}
+.diceplace .zfour{
+    background-position: center -120px;
+}
+.diceplace .zfive{
+    background-position: center -60px;
+}
+.diceplace .zsix{
+    background-position: center 0;
+}
+#zarithree,
+#zarifour,
+.zarthree #zarifour,
+.zartwo #zarithree,
+.zartwo #zarifour,
+.zarone #zaritwo,
+.zarone #zarithree,
+.zarone #zarifour{
+    display: none;
+}
+.zartwo #zaritwo,
+.zarthree #zaritwo,
+.zarthree #zarithree,
+.zarfour #zaritwo,
+.zarfour #zarithree,
+.zarfour #zarifour{
+    display: inline-block;
+}
+#zariaselect{
+    padding: 5px;
+    font-size: 16px;
+}
+@media all and (max-width: 580px){
+    .diceplace div{
+        margin: 0 3px;
+        outline: 2px solid #ccc;
+    }
+}
+@media all and (max-width: 350px){
+    .diceplace div{
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+    }
+    .diceplace .zone{
+        background-position: center -250px;
+    }
+    .diceplace .ztwo{
+        background-position: center -200px;
+    }
+    .diceplace .zthree{
+        background-position: center -150px;
+    }
+    .diceplace .zfour{
+        background-position: center -100px;
+    }
+    .diceplace .zfive{
+        background-position: center -50px;
+    }
+}
