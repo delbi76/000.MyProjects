@@ -4,7 +4,7 @@ $(function()
 {
   var calcNewYear = setInterval(function()
   {
-    date_future = new Date(2023,5,14,13,15);
+    date_future = new Date(2023,5,15,13,15);
     date_now = new Date();
 
     seconds = Math.floor((date_future - (date_now))/1000);
