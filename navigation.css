@@ -1,0 +1,27 @@
+.home-navigation {
+  position: relative;
+  z-index: 101;
+  margin: 20px 0;
+}
+body > .home-navigation {
+  padding: 0 16px;
+}
+.home-navigation .home-link {
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 12px 18px;
+  border: 1px solid #1749a0;
+  border-radius: 10px;
+  background: #fff;
+  color: #1749a0;
+  font: 600 16px/1.5 system-ui, sans-serif;
+  text-decoration: none;
+}
+.home-navigation .home-link:hover {
+  background: #edf3ff;
+}
+.home-navigation .home-link:focus-visible {
+  outline: 3px solid #1749a0;
+  outline-offset: 4px;
+}
